@@ -1,0 +1,114 @@
+.schedule-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px; /* ลด padding */
+  max-width: 650px; /* ลดขนาด */
+  margin: 16px auto;
+  box-shadow: 0 2px 12px #0001;
+}
+
+.schedule-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.schedule-form input,
+.schedule-form select {
+  padding: 6px 8px; /* ลด padding */
+  font-size: 0.92rem; /* ลดขนาดฟอนต์ */
+  min-width: 80px; /* ลด min-width */
+}
+
+.schedule-form button {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+
+.schedule-grid-wrapper {
+  overflow-x: unset; /* ปิด scroll แนวนอน */
+}
+
+.schedule-grid {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 0;
+  font-size: 0.7rem; /* เล็กลงอีก */
+}
+
+.schedule-grid th,
+.schedule-grid td {
+  border: 1px solid #eee;
+  padding: 1px 0;    /* ลด padding แนวตั้ง */
+  text-align: center;
+  min-width: 28px;   /* เล็กลงอีก */
+  font-size: 0.7rem; /* เล็กลงอีก */
+  height: 22px;      /* จำกัดความสูง */
+}
+
+.schedule-grid th {
+  background: #f5f7fa;
+  font-size: 0.85rem;
+}
+
+.time-col {
+  background: #f9f9f9;
+  font-weight: bold;
+}
+
+.cell-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  word-break: break-word;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  padding: 0;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .schedule-container {
+    padding: 4px;
+    max-width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .schedule-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .schedule-form input,
+  .schedule-form select,
+  .schedule-form button {
+    width: 100%;
+    min-width: 0;
+    font-size: 1rem;
+  }
+  .schedule-grid {
+    font-size: 0.9rem;
+  }
+  .schedule-grid th,
+  .schedule-grid td {
+    padding: 4px 1px;
+    font-size: 0.9rem;
+  }
+}
