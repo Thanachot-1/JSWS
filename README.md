@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Class Schedule and Homework Management App
 
 This is a web application designed for managing class schedules and homework assignments. It is mobile-friendly and supports real-time updates using Firebase as the backend. The application allows two users to view and manage each other's information.
@@ -49,3 +50,6 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+=======
+# JSWS
+>>>>>>> efdf9dd41e382231347096cf0c4f9e729da1faac
